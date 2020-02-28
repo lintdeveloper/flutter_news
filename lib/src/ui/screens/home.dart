@@ -13,7 +13,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   int _currentIndex = 0;
-
   List<Widget> _children;
 
   @override
@@ -21,7 +20,9 @@ class _HomeState extends State<Home> {
     super.initState();
     _children = [
       NewsDashboardScreen(),
-      //TODO: more screens
+      NewsDashboardScreen(),
+      NewsDashboardScreen(),
+      NewsDashboardScreen()
     ];
   }
 
@@ -31,31 +32,7 @@ class _HomeState extends State<Home> {
         key: _scaffoldKey,
         appBar: AppBar(
           elevation: 0,
-          leading: Row(
-            children: <Widget>[
-              Stack(
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.only(left: 16),
-                    child: Image.asset("assets/images/clipped_image.png"),
-                  ),
-                  Positioned(
-                      bottom: -2,
-                      left: 32,
-                      child: Icon(
-                        Icons.brightness_1,
-                        color: Colors.red,
-                        size: 24,
-                      )),
-                  Positioned(
-                      bottom: 2,
-                      left: 40,
-                      child: Text("2",
-                          style: TextStyle(color: Colors.white)))
-                ],
-              )
-            ],
-          ),
+          centerTitle: true,
           title: Text(Constants.appName)
         ),
         body: _children[_currentIndex],
@@ -66,8 +43,68 @@ class _HomeState extends State<Home> {
           currentIndex: _currentIndex,
           onTap: onTabTapped,
           items: [
-            //TODO: Bottom Nav Items
+            BottomNavigationBarItem(
+              icon: Container(
+                width: 18,
+                child: Image.asset('assets/images/home.png',
+                    color: _currentIndex == 0
+                        ? Color(0xff59C2FF)
+                        : Colors.black38),
+              ),
+              title: Text('Home',
+                  style: TextStyle(
+                      color: _currentIndex == 0
+                          ? Color(0xff59C2FF)
+                          : Colors.black38)),
+            ),
+            BottomNavigationBarItem(
+              icon: Container(
+                width: 18,
+                child: Image.asset('assets/images/discover.png',
+                    color: _currentIndex == 1
+                        ? Color(0xff59C2FF)
+                        : Colors.black38),
+              ),
+              title: Text(
+                'Discover',
+                style: TextStyle(
+                  color:
+                  _currentIndex == 1 ? Color(0xff59C2FF) : Colors.black38,
+                ),
+              ),
+            ),
+            BottomNavigationBarItem(
+              icon: Container(
+                width: 18,
+                child: Image.asset('assets/images/notifications.png',
+                    color: _currentIndex == 2
+                        ? Color(0xff59C2FF)
+                        : Colors.black38),
+              ),
+              title: Text(
+                'Notifications',
+                style: TextStyle(
+                  color:
+                  _currentIndex == 2 ? Color(0xff59C2FF) : Colors.black38,
+                ),
+              ),
+            ),
+            BottomNavigationBarItem(
+              icon: Container(
+                width: 18,
+                child: Image.asset('assets/images/profile.png',
+                    color: _currentIndex == 3
+                        ? Color(0xff59C2FF)
+                        : Colors.black38),
+              ),
+              title: Text('Profile',
+                  style: TextStyle(
+                    color:
+                    _currentIndex == 3 ? Color(0xff59C2FF) : Colors.black38,
+                  )),
+            ),
           ],
+//            onTap: onTabTapped
         ));
   }
 
