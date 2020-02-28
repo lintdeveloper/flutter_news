@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_news/src/ui/screens/screens.dart';
 import 'package:flutter_news/src/utils/const.dart';
 
 import 'dashboard/dashboard.dart';
@@ -20,9 +21,9 @@ class _HomeState extends State<Home> {
     super.initState();
     _children = [
       NewsDashboardScreen(),
-      NewsDashboardScreen(),
-      NewsDashboardScreen(),
-      NewsDashboardScreen()
+      DiscoverScreen(),
+      NotificationsScreen(),
+      ProfileScreen()
     ];
   }
 
