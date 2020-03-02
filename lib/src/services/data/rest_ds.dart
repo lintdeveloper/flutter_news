@@ -6,11 +6,11 @@ import 'package:http/http.dart' as http;
 
 class NewsDataSource {
 
-  Future<List<Articles>> getNewsHeadlines() async {
+  Future<List<Articles>> getNewsHeadlines(String category) async {
+    String newsUrl = Constants.BASE_URL + '/top-headlines?country=ng&category=$category&apiKey=${Constants.API_KEY}';
 
-    final response = await http.get(Constants.BASE_URL + '/top-headlines?country=us&apiKey=${Constants.API_KEY}');
+    final response = await http.get(newsUrl);
     final responseString = jsonDecode(response.body);
-    print(responseString);
     if (response.statusCode == 200) {
       return NewsHeadlines.fromJson(responseString).articles;
     } else {

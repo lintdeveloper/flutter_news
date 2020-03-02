@@ -24,41 +24,70 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
           title: Text(Constants.appName),
           bottom: TabBar(
               isScrollable: true,
-              onTap: (val){
+              onTap: (val) {
                 setState(() {
                   selectedTab = val;
                 });
               },
-              indicator: CircleTabIndicator(color: Color(0xff59C2FF), radius: 3),
+              indicator:
+                  CircleTabIndicator(color: Color(0xff59C2FF), radius: 3),
               tabs: [
                 Tab(
                     child: Text("General",
                         style: TextStyle(
-                            fontSize: 16, color: selectedTab == 0 ? Color(0xff333333): Color(0xffBEC4CD), fontWeight: FontWeight.w400))),
+                            fontSize: 16,
+                            color: selectedTab == 0
+                                ? Color(0xff333333)
+                                : Color(0xffBEC4CD),
+                            fontWeight: FontWeight.w400))),
                 Tab(
                     child: Text("Business",
                         style: TextStyle(
-                            fontSize: 16, color: selectedTab == 1 ? Color(0xff333333): Color(0xffBEC4CD), fontWeight: FontWeight.w400))),
+                            fontSize: 16,
+                            color: selectedTab == 1
+                                ? Color(0xff333333)
+                                : Color(0xffBEC4CD),
+                            fontWeight: FontWeight.w400))),
                 Tab(
                     child: Text("Entertainment",
                         style: TextStyle(
-                            fontSize: 16, color: selectedTab == 2 ? Color(0xff333333): Color(0xffBEC4CD), fontWeight: FontWeight.w400))),
+                            fontSize: 16,
+                            color: selectedTab == 2
+                                ? Color(0xff333333)
+                                : Color(0xffBEC4CD),
+                            fontWeight: FontWeight.w400))),
                 Tab(
                     child: Text("Health",
                         style: TextStyle(
-                            fontSize: 16, color: selectedTab == 3 ? Color(0xff333333): Color(0xffBEC4CD), fontWeight: FontWeight.w400))),
+                            fontSize: 16,
+                            color: selectedTab == 3
+                                ? Color(0xff333333)
+                                : Color(0xffBEC4CD),
+                            fontWeight: FontWeight.w400))),
                 Tab(
                     child: Text("Science",
                         style: TextStyle(
-                            fontSize: 16, color: selectedTab == 4 ? Color(0xff333333): Color(0xffBEC4CD), fontWeight: FontWeight.w400))),
+                            fontSize: 16,
+                            color: selectedTab == 4
+                                ? Color(0xff333333)
+                                : Color(0xffBEC4CD),
+                            fontWeight: FontWeight.w400))),
                 Tab(
                     child: Text("Sports",
                         style: TextStyle(
-                            fontSize: 16, color: selectedTab == 5 ? Color(0xff333333): Color(0xffBEC4CD), fontWeight: FontWeight.w400))),
+                            fontSize: 16,
+                            color: selectedTab == 5
+                                ? Color(0xff333333)
+                                : Color(0xffBEC4CD),
+                            fontWeight: FontWeight.w400))),
                 Tab(
                     child: Text("Technology",
                         style: TextStyle(
-                            fontSize: 16, color: selectedTab == 6 ? Color(0xff333333): Color(0xffBEC4CD), fontWeight: FontWeight.w400))),
+                            fontSize: 16,
+                            color: selectedTab == 6
+                                ? Color(0xff333333)
+                                : Color(0xffBEC4CD),
+                            fontWeight: FontWeight.w400))),
               ]),
         ),
         body: TabBarView(children: [
@@ -70,8 +99,8 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                 children: <Widget>[
                   Container(
                     height: 300,
-                    child:  FutureBuilder<List<Articles>>(
-                      future: NewsDataSource().getNewsHeadlines(),
+                    child: FutureBuilder<List<Articles>>(
+                      future: NewsDataSource().getNewsHeadlines("general"),
                       builder: (context, snapshot) {
                         if (snapshot.hasError) print(snapshot.error);
 
@@ -92,7 +121,7 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             fontWeight: FontWeight.w400)),
                   ),
                   Container(
-                    height: screenHeight(context, dividedBy: 3.2),
+                    height: 140,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       shrinkWrap: true,
@@ -104,86 +133,44 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             children: <Widget>[
                               Card(
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
                                     Image.asset("assets/images/bus.png"),
-                                    Column(
-                                      children: <Widget>[Text(""), Text("")],
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Card(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                              color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
                                             ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
+                                          Text(
+                                              "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                  "used in laying out print, graphic or web designs. The passage"
+                                                  " is attributed to an unknown typesetter in the 15th "
+                                                  "century who is thought to have scrambled parts "
+                                                  "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                  "a type specimen book.",
+                                            softWrap: true,
+                                            maxLines: 2,
+                                            overflow: TextOverflow.ellipsis),
+                                            Container(
+                                             padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],
@@ -198,67 +185,98 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
                               Card(
-                                child: Column(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
+                                    Image.asset("assets/images/bus.png"),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
                                             ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
                                             ),
-                                          )
-                                        ],
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],
@@ -281,7 +299,7 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             fontWeight: FontWeight.w400)),
                   ),
                   Container(
-                    height: screenHeight(context, dividedBy: 3.2),
+                    height: 140,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       shrinkWrap: true,
@@ -292,67 +310,45 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
                               Card(
-                                child: Column(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
+                                    Image.asset("assets/images/bus.png"),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
                                             ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],
@@ -367,67 +363,45 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
                               Card(
-                                child: Column(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
+                                    Image.asset("assets/images/bus.png"),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
                                             ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],
@@ -442,67 +416,45 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
                               Card(
-                                child: Column(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
+                                    Image.asset("assets/images/bus.png"),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
                                             ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],
@@ -513,7 +465,7 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                         ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -543,11 +495,11 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
+                                        width: screenWidth(context,
+                                            dividedBy: 1.8)),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Heading 1",
                                         style: TextStyle(
@@ -556,8 +508,8 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Summary",
                                         style: TextStyle(
@@ -566,25 +518,28 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
+                                      width:
+                                          screenWidth(context, dividedBy: 1.8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: <Widget>[
                                           Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
                                               Text("Author: M. A. Musa",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey)),
                                               Text("1st March, 2016",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey))
                                             ],
                                           ),
@@ -618,11 +573,11 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
+                                        width: screenWidth(context,
+                                            dividedBy: 1.8)),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Heading 1",
                                         style: TextStyle(
@@ -631,8 +586,8 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Summary",
                                         style: TextStyle(
@@ -641,25 +596,28 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
+                                      width:
+                                          screenWidth(context, dividedBy: 1.8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: <Widget>[
                                           Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
                                               Text("Author: M. A. Musa",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey)),
                                               Text("1st March, 2016",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey))
                                             ],
                                           ),
@@ -693,11 +651,11 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
+                                        width: screenWidth(context,
+                                            dividedBy: 1.8)),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Heading 1",
                                         style: TextStyle(
@@ -706,8 +664,8 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Summary",
                                         style: TextStyle(
@@ -716,25 +674,28 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
+                                      width:
+                                          screenWidth(context, dividedBy: 1.8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: <Widget>[
                                           Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
                                               Text("Author: M. A. Musa",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey)),
                                               Text("1st March, 2016",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey))
                                             ],
                                           ),
@@ -1222,11 +1183,11 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
+                                        width: screenWidth(context,
+                                            dividedBy: 1.8)),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Heading 1",
                                         style: TextStyle(
@@ -1235,8 +1196,8 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Summary",
                                         style: TextStyle(
@@ -1245,25 +1206,28 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
+                                      width:
+                                          screenWidth(context, dividedBy: 1.8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: <Widget>[
                                           Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
                                               Text("Author: M. A. Musa",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey)),
                                               Text("1st March, 2016",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey))
                                             ],
                                           ),
@@ -1297,11 +1261,11 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
+                                        width: screenWidth(context,
+                                            dividedBy: 1.8)),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Heading 1",
                                         style: TextStyle(
@@ -1310,8 +1274,8 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Summary",
                                         style: TextStyle(
@@ -1320,25 +1284,28 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
+                                      width:
+                                          screenWidth(context, dividedBy: 1.8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: <Widget>[
                                           Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
                                               Text("Author: M. A. Musa",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey)),
                                               Text("1st March, 2016",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey))
                                             ],
                                           ),
@@ -1372,11 +1339,11 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
+                                        width: screenWidth(context,
+                                            dividedBy: 1.8)),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Heading 1",
                                         style: TextStyle(
@@ -1385,8 +1352,8 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Summary",
                                         style: TextStyle(
@@ -1395,25 +1362,28 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
+                                      width:
+                                          screenWidth(context, dividedBy: 1.8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: <Widget>[
                                           Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
                                               Text("Author: M. A. Musa",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey)),
                                               Text("1st March, 2016",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey))
                                             ],
                                           ),
@@ -1474,157 +1444,7 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                               )
                             ],
                           ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Card(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
-                                    Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
-                                            ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Card(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
-                                    Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
-                                            ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
+                        )
                       ],
                     ),
                   ),
@@ -1655,11 +1475,11 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
+                                        width: screenWidth(context,
+                                            dividedBy: 1.8)),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Heading 1",
                                         style: TextStyle(
@@ -1668,8 +1488,8 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Summary",
                                         style: TextStyle(
@@ -1678,25 +1498,28 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
+                                      width:
+                                          screenWidth(context, dividedBy: 1.8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: <Widget>[
                                           Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
                                               Text("Author: M. A. Musa",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey)),
                                               Text("1st March, 2016",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey))
                                             ],
                                           ),
@@ -1730,11 +1553,11 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
+                                        width: screenWidth(context,
+                                            dividedBy: 1.8)),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Heading 1",
                                         style: TextStyle(
@@ -1743,8 +1566,8 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Summary",
                                         style: TextStyle(
@@ -1753,25 +1576,28 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
+                                      width:
+                                          screenWidth(context, dividedBy: 1.8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: <Widget>[
                                           Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
                                               Text("Author: M. A. Musa",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey)),
                                               Text("1st March, 2016",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey))
                                             ],
                                           ),
@@ -1805,11 +1631,11 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Image.asset("assets/images/news-1.png",
-                                        width:
-                                        screenWidth(context, dividedBy: 1.8)),
+                                        width: screenWidth(context,
+                                            dividedBy: 1.8)),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Heading 1",
                                         style: TextStyle(
@@ -1818,8 +1644,8 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 2),
                                       child: Text(
                                         "Summary",
                                         style: TextStyle(
@@ -1828,25 +1654,28 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                                       ),
                                     ),
                                     Container(
-                                      width: screenWidth(context, dividedBy: 1.8),
+                                      width:
+                                          screenWidth(context, dividedBy: 1.8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: <Widget>[
                                           Column(
                                             crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
                                               Text("Author: M. A. Musa",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey)),
                                               Text("1st March, 2016",
                                                   style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.w400,
+                                                      fontWeight:
+                                                          FontWeight.w400,
                                                       color: Colors.grey))
                                             ],
                                           ),
@@ -1891,6 +1720,8 @@ class NewsHeadlinesList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String emptyImage =
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReqGZkNh_7PiMLETDSFY0edIBsgco8NZEl3DYT7FWK8p9p3gk8&s';
     if (headlines.length == 0) {
       return Container(
         margin: EdgeInsets.only(bottom: 16.0),
@@ -1912,7 +1743,7 @@ class NewsHeadlinesList extends StatelessWidget {
       itemBuilder: (context, index) {
         return GestureDetector(
           onTap: null,
-          child:  Padding(
+          child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 6),
             child: Container(
               width: 260,
@@ -1920,29 +1751,34 @@ class NewsHeadlinesList extends StatelessWidget {
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Image.network(headlines[index].image,  width: 260, height: 150,),
+                  Image.network(
+                    headlines[index].image == null
+                        ? emptyImage
+                        : headlines[index].image,
+                    width: 260,
+                    height: 150,
+                  ),
                   Padding(
-                    padding:
-                    const EdgeInsets.symmetric(vertical: 2),
+                    padding: const EdgeInsets.symmetric(vertical: 2),
                     child: Text(
-                      headlines[index].title == null ? "No Title" : headlines[index].title,
-                      style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w700),
+                      headlines[index].title == null
+                          ? "No Title"
+                          : headlines[index].title,
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
                   Padding(
-                    padding:
-                    const EdgeInsets.symmetric(vertical: 2),
+                    padding: const EdgeInsets.symmetric(vertical: 2),
                     child: Text(
-                      headlines[index].content == null ? "No Content\n\n" : headlines[index].content,
-                      style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400),
+                      headlines[index].content == null
+                          ? "No Content\n\n"
+                          : headlines[index].content,
+                      style:
+                          TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
                       maxLines: 3,
-
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
@@ -1951,23 +1787,26 @@ class NewsHeadlinesList extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
-                      boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 5)],
+                      boxShadow: [
+                        BoxShadow(color: Colors.black12, blurRadius: 5)
+                      ],
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment:
-                      MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Column(
-                          crossAxisAlignment:
-                          CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text(headlines[index].author == null ? "No Author": headlines[index].author,
-                                style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w400,
-                                    color: Colors.grey),
+                            Text(
+                              headlines[index].author == null
+                                  ? "No Author"
+                                  : headlines[index].author,
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Colors.grey),
                               overflow: TextOverflow.ellipsis,
                               maxLines: 1,
                             ),
