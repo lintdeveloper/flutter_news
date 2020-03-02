@@ -28,4 +28,7 @@ class Constants{
       ),
     ),
   );
+
+  static const String BASE_URL = 'http://newsapi.org/v2';
+  static const String API_KEY = '4171bcf2cdb341b0b55b619278c1ac25';
 }

@@ -31,11 +31,11 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
         key: _scaffoldKey,
-        appBar: AppBar(
-          elevation: 0,
-          centerTitle: true,
-          title: Text(Constants.appName)
-        ),
+//        appBar: AppBar(
+//          elevation: 0,
+//          centerTitle: true,
+//          title: Text(Constants.appName)
+//        ),
         body: _children[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
           showUnselectedLabels: true,
