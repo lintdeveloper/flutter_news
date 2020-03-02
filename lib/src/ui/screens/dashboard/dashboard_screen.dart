@@ -470,8 +470,6 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
               ),
             ),
           ),
-          Container(),
-          Container(),
           SingleChildScrollView(
             padding: EdgeInsets.all(12),
             child: Container(
@@ -479,934 +477,16 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
               child: Column(
                 children: <Widget>[
                   Container(
-                    height: screenHeight(context, dividedBy: 3.2),
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      shrinkWrap: true,
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Card(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width: screenWidth(context,
-                                            dividedBy: 1.8)),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
-                                    Container(
-                                      width:
-                                          screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
-                                            ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Card(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width: screenWidth(context,
-                                            dividedBy: 1.8)),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
-                                    Container(
-                                      width:
-                                          screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
-                                            ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Card(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width: screenWidth(context,
-                                            dividedBy: 1.8)),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
-                                    Container(
-                                      width:
-                                          screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
-                                            ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-//                  Container(
-//                    margin: EdgeInsets.symmetric(vertical: 12),
-//                    padding: EdgeInsets.only(left: 8),
-//                    alignment: Alignment.topLeft,
-//                    child: Text("Top headlines in Nigeria",
-//                        style: TextStyle(
-//                            fontSize: 18,
-//                            color: Color(0xff333333),
-//                            fontWeight: FontWeight.w400)),
-//                  ),
-//                  Container(
-//                    height: screenHeight(context, dividedBy: 3.2),
-//                    child: ListView(
-//                      scrollDirection: Axis.horizontal,
-//                      shrinkWrap: true,
-//                      children: <Widget>[
-//                        Padding(
-//                          padding: const EdgeInsets.symmetric(horizontal: 6),
-//                          child: Column(
-//                            mainAxisSize: MainAxisSize.max,
-//                            children: <Widget>[
-//                              Card(
-//                                child: Row(
-//                                  mainAxisSize: MainAxisSize.max,
-//                                  crossAxisAlignment: CrossAxisAlignment.start,
-//                                  children: <Widget>[
-//                                    Image.asset("assets/images/bus.png"),
-//                                    Column(
-//                                      children: <Widget>[Text(""), Text("")],
-//                                    )
-//                                  ],
-//                                ),
-//                              )
-//                            ],
-//                          ),
-//                        ),
-//                        Padding(
-//                          padding: const EdgeInsets.symmetric(horizontal: 6),
-//                          child: Column(
-//                            mainAxisSize: MainAxisSize.max,
-//                            children: <Widget>[
-//                              Card(
-//                                child: Column(
-//                                  mainAxisSize: MainAxisSize.max,
-//                                  crossAxisAlignment: CrossAxisAlignment.start,
-//                                  children: <Widget>[
-//                                    Image.asset("assets/images/news-1.png",
-//                                        width:
-//                                        screenWidth(context, dividedBy: 1.8)),
-//                                    Padding(
-//                                      padding:
-//                                      const EdgeInsets.symmetric(vertical: 2),
-//                                      child: Text(
-//                                        "Heading 1",
-//                                        style: TextStyle(
-//                                            fontSize: 16,
-//                                            fontWeight: FontWeight.w700),
-//                                      ),
-//                                    ),
-//                                    Padding(
-//                                      padding:
-//                                      const EdgeInsets.symmetric(vertical: 2),
-//                                      child: Text(
-//                                        "Summary",
-//                                        style: TextStyle(
-//                                            fontSize: 14,
-//                                            fontWeight: FontWeight.w400),
-//                                      ),
-//                                    ),
-//                                    Container(
-//                                      width: screenWidth(context, dividedBy: 1.8),
-//                                      child: Row(
-//                                        mainAxisSize: MainAxisSize.max,
-//                                        mainAxisAlignment:
-//                                        MainAxisAlignment.spaceBetween,
-//                                        children: <Widget>[
-//                                          Column(
-//                                            crossAxisAlignment:
-//                                            CrossAxisAlignment.start,
-//                                            children: <Widget>[
-//                                              Text("Author: M. A. Musa",
-//                                                  style: TextStyle(
-//                                                      fontSize: 12,
-//                                                      fontWeight: FontWeight.w400,
-//                                                      color: Colors.grey)),
-//                                              Text("1st March, 2016",
-//                                                  style: TextStyle(
-//                                                      fontSize: 12,
-//                                                      fontWeight: FontWeight.w400,
-//                                                      color: Colors.grey))
-//                                            ],
-//                                          ),
-//                                          Padding(
-//                                            padding: const EdgeInsets.only(
-//                                              right: 4,
-//                                            ),
-//                                            child: Icon(
-//                                              Icons.bookmark_border,
-//                                              size: 32,
-//                                              color: Colors.grey,
-//                                            ),
-//                                          )
-//                                        ],
-//                                      ),
-//                                    )
-//                                  ],
-//                                ),
-//                              )
-//                            ],
-//                          ),
-//                        ),
-//                        Padding(
-//                          padding: const EdgeInsets.symmetric(horizontal: 6),
-//                          child: Column(
-//                            mainAxisSize: MainAxisSize.max,
-//                            children: <Widget>[
-//                              Card(
-//                                child: Column(
-//                                  mainAxisSize: MainAxisSize.max,
-//                                  crossAxisAlignment: CrossAxisAlignment.start,
-//                                  children: <Widget>[
-//                                    Image.asset("assets/images/news-1.png",
-//                                        width:
-//                                        screenWidth(context, dividedBy: 1.8)),
-//                                    Padding(
-//                                      padding:
-//                                      const EdgeInsets.symmetric(vertical: 2),
-//                                      child: Text(
-//                                        "Heading 1",
-//                                        style: TextStyle(
-//                                            fontSize: 16,
-//                                            fontWeight: FontWeight.w700),
-//                                      ),
-//                                    ),
-//                                    Padding(
-//                                      padding:
-//                                      const EdgeInsets.symmetric(vertical: 2),
-//                                      child: Text(
-//                                        "Summary",
-//                                        style: TextStyle(
-//                                            fontSize: 14,
-//                                            fontWeight: FontWeight.w400),
-//                                      ),
-//                                    ),
-//                                    Container(
-//                                      width: screenWidth(context, dividedBy: 1.8),
-//                                      child: Row(
-//                                        mainAxisSize: MainAxisSize.max,
-//                                        mainAxisAlignment:
-//                                        MainAxisAlignment.spaceBetween,
-//                                        children: <Widget>[
-//                                          Column(
-//                                            crossAxisAlignment:
-//                                            CrossAxisAlignment.start,
-//                                            children: <Widget>[
-//                                              Text("Author: M. A. Musa",
-//                                                  style: TextStyle(
-//                                                      fontSize: 12,
-//                                                      fontWeight: FontWeight.w400,
-//                                                      color: Colors.grey)),
-//                                              Text("1st March, 2016",
-//                                                  style: TextStyle(
-//                                                      fontSize: 12,
-//                                                      fontWeight: FontWeight.w400,
-//                                                      color: Colors.grey))
-//                                            ],
-//                                          ),
-//                                          Padding(
-//                                            padding: const EdgeInsets.only(
-//                                              right: 4,
-//                                            ),
-//                                            child: Icon(
-//                                              Icons.bookmark_border,
-//                                              size: 32,
-//                                              color: Colors.grey,
-//                                            ),
-//                                          )
-//                                        ],
-//                                      ),
-//                                    )
-//                                  ],
-//                                ),
-//                              )
-//                            ],
-//                          ),
-//                        ),
-//                      ],
-//                    ),
-//                  ),
-//                  Container(
-//                    margin: EdgeInsets.symmetric(vertical: 12),
-//                    padding: EdgeInsets.only(left: 8),
-//                    alignment: Alignment.topLeft,
-//                    child: Text("Top headlines in US",
-//                        style: TextStyle(
-//                            fontSize: 18,
-//                            color: Color(0xff333333),
-//                            fontWeight: FontWeight.w400)),
-//                  ),
-//                  Container(
-//                    height: screenHeight(context, dividedBy: 3.2),
-//                    child: ListView(
-//                      scrollDirection: Axis.horizontal,
-//                      shrinkWrap: true,
-//                      children: <Widget>[
-//                        Padding(
-//                          padding: const EdgeInsets.symmetric(horizontal: 6),
-//                          child: Column(
-//                            mainAxisSize: MainAxisSize.max,
-//                            children: <Widget>[
-//                              Card(
-//                                child: Column(
-//                                  mainAxisSize: MainAxisSize.max,
-//                                  crossAxisAlignment: CrossAxisAlignment.start,
-//                                  children: <Widget>[
-//                                    Image.asset("assets/images/news-1.png",
-//                                        width:
-//                                        screenWidth(context, dividedBy: 1.8)),
-//                                    Padding(
-//                                      padding:
-//                                      const EdgeInsets.symmetric(vertical: 2),
-//                                      child: Text(
-//                                        "Heading 1",
-//                                        style: TextStyle(
-//                                            fontSize: 16,
-//                                            fontWeight: FontWeight.w700),
-//                                      ),
-//                                    ),
-//                                    Padding(
-//                                      padding:
-//                                      const EdgeInsets.symmetric(vertical: 2),
-//                                      child: Text(
-//                                        "Summary",
-//                                        style: TextStyle(
-//                                            fontSize: 14,
-//                                            fontWeight: FontWeight.w400),
-//                                      ),
-//                                    ),
-//                                    Container(
-//                                      width: screenWidth(context, dividedBy: 1.8),
-//                                      child: Row(
-//                                        mainAxisSize: MainAxisSize.max,
-//                                        mainAxisAlignment:
-//                                        MainAxisAlignment.spaceBetween,
-//                                        children: <Widget>[
-//                                          Column(
-//                                            crossAxisAlignment:
-//                                            CrossAxisAlignment.start,
-//                                            children: <Widget>[
-//                                              Text("Author: M. A. Musa",
-//                                                  style: TextStyle(
-//                                                      fontSize: 12,
-//                                                      fontWeight: FontWeight.w400,
-//                                                      color: Colors.grey)),
-//                                              Text("1st March, 2016",
-//                                                  style: TextStyle(
-//                                                      fontSize: 12,
-//                                                      fontWeight: FontWeight.w400,
-//                                                      color: Colors.grey))
-//                                            ],
-//                                          ),
-//                                          Padding(
-//                                            padding: const EdgeInsets.only(
-//                                              right: 4,
-//                                            ),
-//                                            child: Icon(
-//                                              Icons.bookmark_border,
-//                                              size: 32,
-//                                              color: Colors.grey,
-//                                            ),
-//                                          )
-//                                        ],
-//                                      ),
-//                                    )
-//                                  ],
-//                                ),
-//                              )
-//                            ],
-//                          ),
-//                        ),
-//                        Padding(
-//                          padding: const EdgeInsets.symmetric(horizontal: 6),
-//                          child: Column(
-//                            mainAxisSize: MainAxisSize.max,
-//                            children: <Widget>[
-//                              Card(
-//                                child: Column(
-//                                  mainAxisSize: MainAxisSize.max,
-//                                  crossAxisAlignment: CrossAxisAlignment.start,
-//                                  children: <Widget>[
-//                                    Image.asset("assets/images/news-1.png",
-//                                        width:
-//                                        screenWidth(context, dividedBy: 1.8)),
-//                                    Padding(
-//                                      padding:
-//                                      const EdgeInsets.symmetric(vertical: 2),
-//                                      child: Text(
-//                                        "Heading 1",
-//                                        style: TextStyle(
-//                                            fontSize: 16,
-//                                            fontWeight: FontWeight.w700),
-//                                      ),
-//                                    ),
-//                                    Padding(
-//                                      padding:
-//                                      const EdgeInsets.symmetric(vertical: 2),
-//                                      child: Text(
-//                                        "Summary",
-//                                        style: TextStyle(
-//                                            fontSize: 14,
-//                                            fontWeight: FontWeight.w400),
-//                                      ),
-//                                    ),
-//                                    Container(
-//                                      width: screenWidth(context, dividedBy: 1.8),
-//                                      child: Row(
-//                                        mainAxisSize: MainAxisSize.max,
-//                                        mainAxisAlignment:
-//                                        MainAxisAlignment.spaceBetween,
-//                                        children: <Widget>[
-//                                          Column(
-//                                            crossAxisAlignment:
-//                                            CrossAxisAlignment.start,
-//                                            children: <Widget>[
-//                                              Text("Author: M. A. Musa",
-//                                                  style: TextStyle(
-//                                                      fontSize: 12,
-//                                                      fontWeight: FontWeight.w400,
-//                                                      color: Colors.grey)),
-//                                              Text("1st March, 2016",
-//                                                  style: TextStyle(
-//                                                      fontSize: 12,
-//                                                      fontWeight: FontWeight.w400,
-//                                                      color: Colors.grey))
-//                                            ],
-//                                          ),
-//                                          Padding(
-//                                            padding: const EdgeInsets.only(
-//                                              right: 4,
-//                                            ),
-//                                            child: Icon(
-//                                              Icons.bookmark_border,
-//                                              size: 32,
-//                                              color: Colors.grey,
-//                                            ),
-//                                          )
-//                                        ],
-//                                      ),
-//                                    )
-//                                  ],
-//                                ),
-//                              )
-//                            ],
-//                          ),
-//                        ),
-//                        Padding(
-//                          padding: const EdgeInsets.symmetric(horizontal: 6),
-//                          child: Column(
-//                            mainAxisSize: MainAxisSize.max,
-//                            children: <Widget>[
-//                              Card(
-//                                child: Column(
-//                                  mainAxisSize: MainAxisSize.max,
-//                                  crossAxisAlignment: CrossAxisAlignment.start,
-//                                  children: <Widget>[
-//                                    Image.asset("assets/images/news-1.png",
-//                                        width:
-//                                        screenWidth(context, dividedBy: 1.8)),
-//                                    Padding(
-//                                      padding:
-//                                      const EdgeInsets.symmetric(vertical: 2),
-//                                      child: Text(
-//                                        "Heading 1",
-//                                        style: TextStyle(
-//                                            fontSize: 16,
-//                                            fontWeight: FontWeight.w700),
-//                                      ),
-//                                    ),
-//                                    Padding(
-//                                      padding:
-//                                      const EdgeInsets.symmetric(vertical: 2),
-//                                      child: Text(
-//                                        "Summary",
-//                                        style: TextStyle(
-//                                            fontSize: 14,
-//                                            fontWeight: FontWeight.w400),
-//                                      ),
-//                                    ),
-//                                    Container(
-//                                      width: screenWidth(context, dividedBy: 1.8),
-//                                      child: Row(
-//                                        mainAxisSize: MainAxisSize.max,
-//                                        mainAxisAlignment:
-//                                        MainAxisAlignment.spaceBetween,
-//                                        children: <Widget>[
-//                                          Column(
-//                                            crossAxisAlignment:
-//                                            CrossAxisAlignment.start,
-//                                            children: <Widget>[
-//                                              Text("Author: M. A. Musa",
-//                                                  style: TextStyle(
-//                                                      fontSize: 12,
-//                                                      fontWeight: FontWeight.w400,
-//                                                      color: Colors.grey)),
-//                                              Text("1st March, 2016",
-//                                                  style: TextStyle(
-//                                                      fontSize: 12,
-//                                                      fontWeight: FontWeight.w400,
-//                                                      color: Colors.grey))
-//                                            ],
-//                                          ),
-//                                          Padding(
-//                                            padding: const EdgeInsets.only(
-//                                              right: 4,
-//                                            ),
-//                                            child: Icon(
-//                                              Icons.bookmark_border,
-//                                              size: 32,
-//                                              color: Colors.grey,
-//                                            ),
-//                                          )
-//                                        ],
-//                                      ),
-//                                    )
-//                                  ],
-//                                ),
-//                              )
-//                            ],
-//                          ),
-//                        ),
-//                      ],
-//                    ),
-//                  )
-                ],
-              ),
-            ),
-          ),
-          Container(),
-          Container(),
-          SingleChildScrollView(
-            padding: EdgeInsets.all(12),
-            child: Container(
-              width: MediaQuery.of(context).size.width,
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    height: screenHeight(context, dividedBy: 3.2),
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      shrinkWrap: true,
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Card(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width: screenWidth(context,
-                                            dividedBy: 1.8)),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
-                                    Container(
-                                      width:
-                                          screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
-                                            ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Card(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width: screenWidth(context,
-                                            dividedBy: 1.8)),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
-                                    Container(
-                                      width:
-                                          screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
-                                            ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: <Widget>[
-                              Card(
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width: screenWidth(context,
-                                            dividedBy: 1.8)),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
-                                    Container(
-                                      width:
-                                          screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
-                                            ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                      ],
+                    height: 300,
+                    child: FutureBuilder<List<Articles>>(
+                      future: NewsDataSource().getNewsHeadlines("business"),
+                      builder: (context, snapshot) {
+                        if (snapshot.hasError) print(snapshot.error);
+
+                        return snapshot.hasData
+                            ? NewsHeadlinesList(headlines: snapshot.data)
+                            : Center(child: CircularProgressIndicator());
+                      },
                     ),
                   ),
                   Container(
@@ -1420,7 +500,7 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             fontWeight: FontWeight.w400)),
                   ),
                   Container(
-                    height: screenHeight(context, dividedBy: 3.2),
+                    height: 140,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       shrinkWrap: true,
@@ -1432,19 +512,158 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             children: <Widget>[
                               Card(
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
                                     Image.asset("assets/images/bus.png"),
-                                    Column(
-                                      children: <Widget>[Text(""), Text("")],
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
                                     )
                                   ],
                                 ),
                               )
                             ],
                           ),
-                        )
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -1459,7 +678,7 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             fontWeight: FontWeight.w400)),
                   ),
                   Container(
-                    height: screenHeight(context, dividedBy: 3.2),
+                    height: 140,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       shrinkWrap: true,
@@ -1470,70 +689,45 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
                               Card(
-                                child: Column(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width: screenWidth(context,
-                                            dividedBy: 1.8)),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
+                                    Image.asset("assets/images/bus.png"),
                                     Container(
-                                      width:
-                                          screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
                                             ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],
@@ -1548,70 +742,45 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
                               Card(
-                                child: Column(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width: screenWidth(context,
-                                            dividedBy: 1.8)),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
+                                    Image.asset("assets/images/bus.png"),
                                     Container(
-                                      width:
-                                          screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
                                             ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],
@@ -1626,70 +795,45 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                             mainAxisSize: MainAxisSize.max,
                             children: <Widget>[
                               Card(
-                                child: Column(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
-                                    Image.asset("assets/images/news-1.png",
-                                        width: screenWidth(context,
-                                            dividedBy: 1.8)),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Heading 1",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          vertical: 2),
-                                      child: Text(
-                                        "Summary",
-                                        style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w400),
-                                      ),
-                                    ),
+                                    Image.asset("assets/images/bus.png"),
                                     Container(
-                                      width:
-                                          screenWidth(context, dividedBy: 1.8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: <Widget>[
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Text("Author: M. A. Musa",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey)),
-                                              Text("1st March, 2016",
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      color: Colors.grey))
-                                            ],
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              right: 4,
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
                                             ),
-                                            child: Icon(
-                                              Icons.bookmark_border,
-                                              size: 32,
-                                              color: Colors.grey,
-                                            ),
-                                          )
-                                        ],
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     )
                                   ],
@@ -1700,11 +844,1906 @@ class _NewsDashboardScreenState extends State<NewsDashboardScreen> {
                         ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
           ),
+          SingleChildScrollView(
+            padding: EdgeInsets.all(12),
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    height: 300,
+                    child: FutureBuilder<List<Articles>>(
+                      future: NewsDataSource().getNewsHeadlines("entertainment"),
+                      builder: (context, snapshot) {
+                        if (snapshot.hasError) print(snapshot.error);
+
+                        return snapshot.hasData
+                            ? NewsHeadlinesList(headlines: snapshot.data)
+                            : Center(child: CircularProgressIndicator());
+                      },
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.only(left: 8),
+                    alignment: Alignment.topLeft,
+                    child: Text("Top headlines in Nigeria",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xff333333),
+                            fontWeight: FontWeight.w400)),
+                  ),
+                  Container(
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.only(left: 8),
+                    alignment: Alignment.topLeft,
+                    child: Text("Top headlines in US",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xff333333),
+                            fontWeight: FontWeight.w400)),
+                  ),
+                  Container(
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SingleChildScrollView(
+            padding: EdgeInsets.all(12),
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    height: 300,
+                    child: FutureBuilder<List<Articles>>(
+                      future: NewsDataSource().getNewsHeadlines("health"),
+                      builder: (context, snapshot) {
+                        if (snapshot.hasError) print(snapshot.error);
+
+                        return snapshot.hasData
+                            ? NewsHeadlinesList(headlines: snapshot.data)
+                            : Center(child: CircularProgressIndicator());
+                      },
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.only(left: 8),
+                    alignment: Alignment.topLeft,
+                    child: Text("Top headlines in Nigeria",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xff333333),
+                            fontWeight: FontWeight.w400)),
+                  ),
+                  Container(
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.only(left: 8),
+                    alignment: Alignment.topLeft,
+                    child: Text("Top headlines in US",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xff333333),
+                            fontWeight: FontWeight.w400)),
+                  ),
+                  Container(
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SingleChildScrollView(
+            padding: EdgeInsets.all(12),
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    height: 300,
+                    child: FutureBuilder<List<Articles>>(
+                      future: NewsDataSource().getNewsHeadlines("science"),
+                      builder: (context, snapshot) {
+                        if (snapshot.hasError) print(snapshot.error);
+
+                        return snapshot.hasData
+                            ? NewsHeadlinesList(headlines: snapshot.data)
+                            : Center(child: CircularProgressIndicator());
+                      },
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.only(left: 8),
+                    alignment: Alignment.topLeft,
+                    child: Text("Top headlines in Nigeria",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xff333333),
+                            fontWeight: FontWeight.w400)),
+                  ),
+                  Container(
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.only(left: 8),
+                    alignment: Alignment.topLeft,
+                    child: Text("Top headlines in US",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xff333333),
+                            fontWeight: FontWeight.w400)),
+                  ),
+                  Container(
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SingleChildScrollView(
+            padding: EdgeInsets.all(12),
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    height: 300,
+                    child: FutureBuilder<List<Articles>>(
+                      future: NewsDataSource().getNewsHeadlines("sports"),
+                      builder: (context, snapshot) {
+                        if (snapshot.hasError) print(snapshot.error);
+
+                        return snapshot.hasData
+                            ? NewsHeadlinesList(headlines: snapshot.data)
+                            : Center(child: CircularProgressIndicator());
+                      },
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.only(left: 8),
+                    alignment: Alignment.topLeft,
+                    child: Text("Top headlines in Nigeria",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xff333333),
+                            fontWeight: FontWeight.w400)),
+                  ),
+                  Container(
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.only(left: 8),
+                    alignment: Alignment.topLeft,
+                    child: Text("Top headlines in US",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xff333333),
+                            fontWeight: FontWeight.w400)),
+                  ),
+                  Container(
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          SingleChildScrollView(
+            padding: EdgeInsets.all(12),
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    height: 300,
+                    child: FutureBuilder<List<Articles>>(
+                      future: NewsDataSource().getNewsHeadlines("technology"),
+                      builder: (context, snapshot) {
+                        if (snapshot.hasError) print(snapshot.error);
+
+                        return snapshot.hasData
+                            ? NewsHeadlinesList(headlines: snapshot.data)
+                            : Center(child: CircularProgressIndicator());
+                      },
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.only(left: 8),
+                    alignment: Alignment.topLeft,
+                    child: Text("Top headlines in Nigeria",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xff333333),
+                            fontWeight: FontWeight.w400)),
+                  ),
+                  Container(
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    padding: EdgeInsets.only(left: 8),
+                    alignment: Alignment.topLeft,
+                    child: Text("Top headlines in US",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xff333333),
+                            fontWeight: FontWeight.w400)),
+                  ),
+                  Container(
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("POLITICS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("CORONAVIRUS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Card(
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Image.asset("assets/images/bus.png"),
+                                    Container(
+                                      width: 180,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(child: Text("GADGETS", style: TextStyle(fontSize: 18,
+                                                color: Color((0xffC3C9DF)))),
+                                              margin: EdgeInsets.only(bottom: 5),
+                                            ),
+                                            Text(
+                                                "Lorem ipsum, or lipsum as it is sometimes known, is dummy text "
+                                                    "used in laying out print, graphic or web designs. The passage"
+                                                    " is attributed to an unknown typesetter in the 15th "
+                                                    "century who is thought to have scrambled parts "
+                                                    "of Cicero's De Finibus Bonorum et Malorum for use in "
+                                                    "a type specimen book.",
+                                                softWrap: true,
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis),
+                                            Container(
+                                              padding: EdgeInsets.only(top: 8),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.end,
+                                                children: <Widget>[
+                                                  Text("14 Jun 2018", style: TextStyle(fontSize: 14,
+                                                      color: Color((0xffC3C9DF)))),
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          )
         ]),
       ),
     );
