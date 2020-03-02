@@ -2838,16 +2838,19 @@ class NewsHeadlinesList extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text(
-                              headlines[index].author == null
-                                  ? "No Author"
-                                  : headlines[index].author,
-                              style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w400,
-                                  color: Colors.grey),
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
+                            Container(
+                              width: 200,
+                              child: Text(
+                                headlines[index].author == null
+                                    ? "No Author"
+                                    : headlines[index].author,
+                                style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w400,
+                                    color: Colors.grey),
+                                overflow: TextOverflow.ellipsis,
+                                maxLines: 1,
+                              ),
                             ),
                             Text(formatDate(headlines[index].publishedAt),
                                 style: TextStyle(
